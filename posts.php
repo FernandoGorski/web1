@@ -55,6 +55,10 @@
 </head>
 <body>
 
+<?php if ($error): ?>
+    <h3> <?= $error_msg ?> </h3>
+<?php endif; ?>
+
 <nav class="navbar navbar-dark bg-primary fixed-top">
     <div class="container-fluid ">
         <h1 class="navbar-text">Posts</h1>

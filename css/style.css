@@ -1,3 +1,19 @@
 .lista-post{
     margin-top: 100px;
 }
+
+.erros{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.cria-usuario{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}

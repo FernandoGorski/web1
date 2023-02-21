@@ -62,6 +62,7 @@ if (!$login && $_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="login.css" type="text/css">
   <script src="js/login.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -70,6 +71,12 @@ if (!$login && $_SERVER["REQUEST_METHOD"] == "POST") {
   </body>
   </html>
   <?php exit(); ?>
+<?php endif; ?>
+
+<?php if ($error): ?>
+  <div class="erros">
+    <h3> <?= $error_msg ?> </h3>
+  </div>
 <?php endif; ?>
 
 <nav class="navbar navbar-dark bg-primary fixed-top">
@@ -103,13 +110,6 @@ if (!$login && $_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit" class="btn btn-primary col-sm-5" name="submit" value="Entrar">
             <a class="btn btn-primary col-sm-5" href="index.php">Voltar</a>
           </div>
-
-          <?php if ($error): ?>
-            <div class="col">
-              <h3 style="color:red;"><?php echo $error_msg; ?></h3>
-            </div>
-          <?php endif; ?>
-
         </div>
       </div>
     </div>

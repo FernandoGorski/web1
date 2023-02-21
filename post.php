@@ -86,11 +86,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/post.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<?php if ($error): ?>
+  <div class="erros">
+    <h3> <?= $error_msg ?> </h3>
+  </div>
+<?php endif; ?>
 
       <nav class="navbar navbar-dark bg-primary fixed-top">
         <div class="container-fluid ">
@@ -132,7 +138,6 @@
         <input class="btn btn-primary col-sm-2" type="submit" name="submit" value="Enviar">
     </form>
     </div>
-    
 
     <?php if($comentarios_post && mysqli_num_rows($comentarios_post) > 0): ?>
         <h2>Comentários</h2>

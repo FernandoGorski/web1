@@ -51,18 +51,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/register.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <?php if ($success): ?>
-  <h3 style="color:lightgreen;">Usuário criado com sucesso!</h3>
-  <p>
-    Seguir para <a href="login.php">login</a>.
-  </p>
+  <div class="cria-usuario">
+    <h3>Usuário criado com sucesso!</h3>
+    <p>
+      Seguir para <a href="login.php">login</a>.
+    </p>
+  </div>
 <?php endif; ?>
 
 <?php if ($error): ?>
-  <h3 style="color:red;"><?php echo $error_msg; ?></h3>
+  <div class="erros">
+    <h3> <?= $error_msg ?> </h3>
+  </div>
 <?php endif; ?>
 
 <nav class="navbar navbar-dark bg-primary fixed-top">
@@ -76,14 +81,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </div>
 </nav>
-
-<?php if ($success): ?>
-  <h3 style="color:lightgreen;">Usuário criado com sucesso!</h3>
-  <p>
-    Seguir para <a href="login.php">login</a>.
-  </p>
-<?php endif; ?>
-
 
 <form action="register.php" method="post" id="form-register">
   <div class="conteiner">
