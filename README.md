@@ -48,7 +48,7 @@ Fernando Guilherme Gorski GRR20223817
 
 Hygor Adriano Tristão GRR20223811
 
-Lucas Gohara
+Lucas Massayuki Gohara GRR20221097
 
 Rhuan Vinicius Rodrigues Martins GRR20221087
 
