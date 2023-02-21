@@ -6,7 +6,7 @@ Este projeto consiste em uma aplicação desenvolvida para o Trabalho Final da D
 
 Um simples blog no qual temos dois tipos de usuários, o Administrador e os Leitores. 
 
-O usuário Administrador pode inserir novos Posts, e cada Post pertence à uma determinada categoria. Os Posts publicados, além do conteúdo, contém, data de criação e/ou atualização. Além disso, o usuário Administrador pode comentar e visualizar todos os comentários referentes aos Posts, e pode alterá-los ou excluí-los.
+O usuário Administrador pode inserir novos Posts, e cada Post pertence à uma determinada categoria. Os Posts publicados, além do conteúdo, contém, data de criação e/ou atualização. Além disso, o usuário Administrador pode comentar e visualizar todos os comentários referentes aos Posts, e pode  alterar os comentários que tenha feito e excluir os comentários dos usuários.
 
 O usuário leitor pode visualizar cada Post de acordo com a categoria selecionada, além de poder comentar zero ou mais vezes. Também pode alterar ou excluir seu comentário.
 
