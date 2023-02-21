@@ -159,6 +159,8 @@
                                 <input type="hidden" name="commentid" value="<?= $row["comment_id"]?>">
                                 <button class="btn btn-outline-primary col-sm-2" type="submit">Remover</button>
                             </form>
+                        <?php endif ?>
+                        <?php if($user_id == $row["autor_id"]):?>    
                             <form action="alter_post.php" method="post">
                                 <input type="hidden" name="commentid" value="<?= $row["comment_id"]?>">
                                 <input type="hidden" name="acao" value="comment">
@@ -167,7 +169,7 @@
                                 <button class="btn btn-outline-primary col-sm-2 mt-1" type="submit">Alterar</button>
                             </form> 
                         <?php endif ?>
-                    </li>
+                        </li>
                 </ul>
             </div>
         <?php endwhile; ?>
