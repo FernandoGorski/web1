@@ -24,7 +24,7 @@
                 $conteudo = mysqli_real_escape_string($conn, sanitize($conteudo));
 
                 $sql = "UPDATE $table_posts
-                        SET titulo = '$titulo', conteudo = $conteudo
+                        SET titulo = '$titulo', conteudo = '$conteudo'
                         WHERE id = '$post'";
                 
                 if(!mysqli_query($conn,$sql)){
@@ -70,7 +70,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="js/alter_post.js"></script>
-    <title>Alterar</title>
+    <title>Document</title>
 </head>
 <body>
     <?php if($_POST["acao"] == "post"):?>
